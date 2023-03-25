@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+</head>
+<body>
+<tr th:each="task :${tasks}" >
+  <td>
+    <a th:href="@{'/task'(id=${task.getId()})}" th:text="${task.getNameId()}"></a>
+  </td>
+  <hr>
+</tr>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task</title>
+</head>
+<body>
+<div th:if="${task} != null">
+  <p th:text="${task.getId()}"></p>
+  <p th:text="${task.getDetail()}"></p>
+  <p th:text="${task.getDeadLine()}"> </p>
+  <p th:text="${task.getUser().getName()}"> </p>
+</div>
+<p th:if="${error} != null" th:text="${error}"></p>
+
+</body>
+</html>
